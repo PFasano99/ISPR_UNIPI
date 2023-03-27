@@ -8,14 +8,21 @@ The topics are listed below:
 
 <br>
 
-### Midterm 1
+### Midterm 1 - 2022
 The musical pitch of a note is determined by its fundamental frequency. The pitch played by different instruments sounds different due to harmonics, i.e. other frequencies that are superimposed and determine the timbre of the instrument. <a href="https://philharmonia.co.uk/resources/sound-samples/"> This dataset</a> contains samples from several instruments playing different notes. Plot the spectrogram for some of them (4 instruments are sufficient) and check if it is possible to recognize the different instruments by only looking at the spectrogram. In your presentation, discuss which samples you chose to compare, how you computed the spectrogram and whether the resulting features are sufficient to recognize the instrument.  
 
 In Python you can import WAVs (and acces several other music-related functions), using the LibROSA library.
+<br>
+
+### Midterm 1 - 2023
+Perform image segmentation on all images in the dataset, using the normalized cut algorithm running on the top of superpixels rather than on raw pixels. For each image compute an accuracy metric (which one it is up to you to decide) measuring the overlap between the image segments identified by NCUT and the ground truth semantic segmentation. Provide a table summarizing the average accuracy on all images (for the different visual classes), plus present 2 examples of images that are well-segmented (according to the above defined metric).
+
+Hint: in Python, you have an NCut implementation in the scikit-image library; in Matlab, you can use the original NCut implementation here. Superpixels are implemented both in Matlab as well as in OpenCV. Feel free to pickup the implementation you liked most (and motivate the choice).
+
 
 <br>
 
-### Midterm 2
+### Midterm 2 - 2022
 Implement a simple image understanding application for DSET2 using the LDA model and the bag of visual terms approach. For details on how to implement the approach see the BOW demo and paper <a href="https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/csurka-eccv-04.pdf">[G. Csurka, C. R. Dance, L. Fan, J. Willamowski, and C. Bray. Visual Categorization with Bags of Keypoints. Workshop on Statistical Learning in Computer Vision. ECCV 2004]</a>.  Keep one picture for each image subset (identified by the initial digit in the filename) out of training for testing. In short:
 
 1. For each image (train and test) extract the SIFT descriptors for the interest points identified by the MSER detector.
@@ -30,7 +37,7 @@ Implement a simple image understanding application for DSET2 using the LDA model
 
 <br>
 
-### Midterm 3
+### Midterm 3 - 2022
 <a href="https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset">DATASET (Fake News Classification) - Dataset</a>
 
 The dataset contains real and fake news, including their title, text, subject, and date. The objective is to train a binary classifier to recognize fake news. You are free to choose the model's architecture, but you should describe and justify your design choices.
