@@ -1,4 +1,4 @@
-# Intelligent Systems for Pattern Recognition 2021/2022
+# Intelligent Systems for Pattern Recognition 2021/2022 and 2022/2023
 
 ## Introduction
 The following repo contains the midterms for the course of Intelligent Systems for Pattern Recognition 2021/2022 of the master's degree in artificial intelligence from the University of Pisa.  
@@ -34,6 +34,18 @@ Implement a simple image understanding application for DSET2 using the LDA model
 4. Test the trained LDA model on test images: plot (a selection of) them with overlaid visual patches coloured with different colours depending on the most likely topic predicted by LDA.
 
 <a href="http://download.microsoft.com/download/A/1/1/A116CD80-5B79-407E-B5CE-3D5C6ED8B0D5/msrc_objcategimagedatabase_v1.zip"> DSET2 (Image processing):</a>
+
+<br>
+
+### Midterm 2 - 2023
+
+Implement from scratch an RBM and apply it to DSET3. The RBM should be implemented fully by you (both CD-1 training and inference steps) but you are free to use library functions for the rest (e.g. image loading and management, etc.).
+
+1.     Train an RBM with a number of hidden neurons selected by you (single layer) on the MNIST data (use the training set split provided by the website).
+
+2.     Use the trained RBM to encode a selection of test images (e.g. using one per digit type) using the corresponding activation of the hidden neurons.
+
+3.     Reconstruct the original test images from their hidden encoding and confront the reconstructions with the original image (use a suitable quantitative metric to assess the reconstraction quality and also choose few examples to confront visually).
 
 <br>
 
