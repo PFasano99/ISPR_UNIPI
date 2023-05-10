@@ -33,9 +33,7 @@ if args.cuda:
 
 print("starting ")
 
-filename = "./char-rnn.pytorch/dataset.txt"
-
-file, file_len = read_file(filename)
+file, file_len = read_file(args.filename)
 print("file_len: ", file_len)
 
 def random_training_set(chunk_len, batch_size):
